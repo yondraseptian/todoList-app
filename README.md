@@ -7,7 +7,6 @@ Aplikasi Todo List yang dikembangkan menggunakan React.js, dengan fitur untuk me
 - Toggle mode gelap (dark mode).
 - Drag and drop todo.
 - Penyimpanan lokal (local storage).
-- Unit testing dan animasi transisi (opsional).
 
 ## Prasyarat
 
