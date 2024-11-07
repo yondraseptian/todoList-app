@@ -4,11 +4,13 @@ import { Header } from "./components/Header";
 import { useTheme } from "./context/ThemeContext";
 import { AddPage } from "./pages/AddPage";
 import { EditPage } from "./pages/EditPage";
+import styles from "./styles/style.module.css";
+
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="app-container" data-theme={theme}>
+    <div className={styles.appContainer} data-theme={theme}>
       <Header toggleTheme={toggleTheme} theme={theme}/>
       <main>
         <Routes>
