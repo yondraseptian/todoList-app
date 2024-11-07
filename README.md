@@ -39,6 +39,5 @@ yarn run dev
 - **Teknologi yang Digunakan**: Menyebutkan teknologi yang digunakan dalam aplikasi.
 - **Kontribusi**: Instruksi bagi orang lain yang ingin berkontribusi dalam proyek ini.
 
-Anda bisa mengganti bagian-bagian seperti `https://github.com/username/todo-list-app.git` dengan URL repositori asli Anda dan menyesuaikan instruksi dengan kebutuhan proyek Anda.
 
 
