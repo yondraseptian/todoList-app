@@ -53,11 +53,14 @@ const todoSlice = createSlice({
 
     reorderTodos: (state, action) => {
       const { startIndex, endIndex } = action.payload;
-      const reorderedTodos = Array.from(state.todos); 
-      const [removed] = reorderedTodos.splice(startIndex, 1); 
-      reorderedTodos.splice(endIndex, 0, removed); 
-      state.todos = reorderedTodos; 
-      localStorage.setItem("todos", JSON.stringify(state.todos)); 
+      const reorderedTodos = Array.from(state.todos);
+      
+      console.log('Reordering Todos:', startIndex, endIndex);  // Log indices
+      const [movedTodo] = reorderedTodos.splice(startIndex, 1);
+      reorderedTodos.splice(endIndex, 0, movedTodo);
+      
+      console.log('Reordered Todos:', reorderedTodos);  // Log todos after reorder
+      state.todos = reorderedTodos;
     }
   },
 });

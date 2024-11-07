@@ -26,9 +26,9 @@ const TodoItem = ({ todo }) => {
       <div className={styles.todoItemActions}>
         <input
           type="checkbox"
+          className={styles.checkTodo}
           checked={todo.completed}
           onChange={handleToggle}
-          aria-label="Toggle todo completion"
           aria-checked={todo.completed ? "true" : "false"} // Add aria-checked for accessibility
         />
         <button
