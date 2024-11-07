@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { editTodo } from "../redux/todoSlice";
 import { ActionButton } from "../components/ActionButton";
 import { MdDone } from "react-icons/md";
+import styles from "../styles/style.module.css";
 
 export const EditPage = () => {
   const { id } = useParams();
@@ -43,16 +44,16 @@ export const EditPage = () => {
   };
 
   return (
-    <div className="edit-page__input">
+    <div className={styles.editPageInput}>
       <form onSubmit={handleSubmit}>
         <input
-          className="edit-page__input__title"
+          className={styles.editPageInputTitle}
           type="text"
           placeholder="Edit judul disini..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <div className="edit-page__action">
+        <div className={styles.editPageAction}>
           <button type="submit">
             <ActionButton>
               <MdDone />

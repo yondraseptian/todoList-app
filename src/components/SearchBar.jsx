@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import styles from "../styles/style.module.css";
 
 export const SearchBar = ({ keyword, keywordChange }) => {
   return (
-    <div className="search-bar">
-      <input
+    <div>
+      <input  className={styles.searchBarInput}
         type="text"
         placeholder="cari berdasarkan judul..."
         value={keyword}

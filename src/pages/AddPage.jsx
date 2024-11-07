@@ -5,6 +5,8 @@ import { v4 as uiidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 import { ActionButton } from "../components/ActionButton";
 import { MdDone } from "react-icons/md";
+import styles from "../styles/style.module.css";
+
 
 export const AddPage = () => {
   const [title, setTitle] = useState("");
@@ -27,16 +29,16 @@ export const AddPage = () => {
     }
   };
   return (
-    <div className="add-new-page__input">
+    <div className={styles.addNewPageInput}>
       <form onSubmit={handleSubmit}>
         <input
-          className="add-new-page__input__title"
+          className={styles.addNewPageInputTitle}
           type="text"
           placeholder="Tuliskan judul disini..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <div className="add-new-page__action">
+        <div className={styles.addNewPageAction}>
           <button type="submit">
             <ActionButton>
               <MdDone />
